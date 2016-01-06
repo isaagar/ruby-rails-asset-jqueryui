@@ -1,0 +1,490 @@
+--- !ruby/object:Gem::Specification
+name: rails-asset-jqueryui
+version: !ruby/object:Gem::Version
+  version: 0.0.3
+  prerelease: 
+platform: ruby
+authors:
+- allen13
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2011-12-02 00:00:00.000000000Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: rspec
+  requirement: &70211074140360 !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: *70211074140360
+- !ruby/object:Gem::Dependency
+  name: rails
+  requirement: &70211074139660 !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: 3.1.0
+  type: :development
+  prerelease: false
+  version_requirements: *70211074139660
+- !ruby/object:Gem::Dependency
+  name: jquery-rails
+  requirement: &70211074139060 !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :runtime
+  prerelease: false
+  version_requirements: *70211074139060
+description: A gemified version of the jquery-ui javascript library.
+email:
+- kex.allen13@gmail.com
+executables: []
+extensions: []
+extra_rdoc_files: []
+files:
+- .gitignore
+- Gemfile
+- README.md
+- Rakefile
+- lib/rails-asset-jqueryui.rb
+- lib/rails-asset-jqueryui/engine.rb
+- lib/rails-asset-jqueryui/version.rb
+- rails-asset-jqueryui.gemspec
+- spec/dummy/.gitignore
+- spec/dummy/.rspec
+- spec/dummy/Guardfile
+- spec/dummy/README
+- spec/dummy/Rakefile
+- spec/dummy/app/assets/images/rails.png
+- spec/dummy/app/assets/javascripts/application.js
+- spec/dummy/app/assets/javascripts/datepicker.js
+- spec/dummy/app/assets/javascripts/home.js.coffee
+- spec/dummy/app/assets/stylesheets/application.css
+- spec/dummy/app/assets/stylesheets/home.css.scss
+- spec/dummy/app/controllers/application_controller.rb
+- spec/dummy/app/controllers/home_controller.rb
+- spec/dummy/app/helpers/application_helper.rb
+- spec/dummy/app/helpers/home_helper.rb
+- spec/dummy/app/mailers/.gitkeep
+- spec/dummy/app/models/.gitkeep
+- spec/dummy/app/views/home/index.html.haml
+- spec/dummy/app/views/layouts/application.html.erb
+- spec/dummy/config.ru
+- spec/dummy/config/application.rb
+- spec/dummy/config/boot.rb
+- spec/dummy/config/cucumber.yml
+- spec/dummy/config/database.yml
+- spec/dummy/config/environment.rb
+- spec/dummy/config/environments/development.rb
+- spec/dummy/config/environments/production.rb
+- spec/dummy/config/environments/test.rb
+- spec/dummy/config/initializers/backtrace_silencers.rb
+- spec/dummy/config/initializers/generators.rb
+- spec/dummy/config/initializers/inflections.rb
+- spec/dummy/config/initializers/mime_types.rb
+- spec/dummy/config/initializers/secret_token.rb
+- spec/dummy/config/initializers/session_store.rb
+- spec/dummy/config/initializers/wrap_parameters.rb
+- spec/dummy/config/locales/en.yml
+- spec/dummy/config/routes.rb
+- spec/dummy/db/schema.rb
+- spec/dummy/db/seeds.rb
+- spec/dummy/doc/README_FOR_APP
+- spec/dummy/features/support/env.rb
+- spec/dummy/lib/assets/.gitkeep
+- spec/dummy/lib/tasks/.gitkeep
+- spec/dummy/lib/tasks/cucumber.rake
+- spec/dummy/log/.gitkeep
+- spec/dummy/public/404.html
+- spec/dummy/public/422.html
+- spec/dummy/public/500.html
+- spec/dummy/public/favicon.ico
+- spec/dummy/public/robots.txt
+- spec/dummy/script/cucumber
+- spec/dummy/script/rails
+- spec/dummy/spec/controllers/home_controller_spec.rb
+- spec/dummy/spec/helpers/home_helper_spec.rb
+- spec/dummy/spec/spec_helper.rb
+- spec/dummy/spec/views/home/index.html.haml_spec.rb
+- spec/dummy/vendor/assets/stylesheets/.gitkeep
+- spec/dummy/vendor/plugins/.gitkeep
+- spec/jqueryui_spec.rb
+- spec/spec_helper.rb
+- vendor/assets/images/black-tie/ui-bg_diagonals-thick_8_333333_40x40.png
+- vendor/assets/images/black-tie/ui-bg_flat_65_ffffff_40x100.png
+- vendor/assets/images/black-tie/ui-bg_glass_40_111111_1x400.png
+- vendor/assets/images/black-tie/ui-bg_glass_55_1c1c1c_1x400.png
+- vendor/assets/images/black-tie/ui-bg_highlight-hard_100_f9f9f9_1x100.png
+- vendor/assets/images/black-tie/ui-bg_highlight-hard_40_aaaaaa_1x100.png
+- vendor/assets/images/black-tie/ui-bg_highlight-soft_50_aaaaaa_1x100.png
+- vendor/assets/images/black-tie/ui-bg_inset-hard_45_cd0a0a_1x100.png
+- vendor/assets/images/black-tie/ui-bg_inset-hard_55_ffeb80_1x100.png
+- vendor/assets/images/black-tie/ui-icons_222222_256x240.png
+- vendor/assets/images/black-tie/ui-icons_4ca300_256x240.png
+- vendor/assets/images/black-tie/ui-icons_bbbbbb_256x240.png
+- vendor/assets/images/black-tie/ui-icons_ededed_256x240.png
+- vendor/assets/images/black-tie/ui-icons_ffcf29_256x240.png
+- vendor/assets/images/black-tie/ui-icons_ffffff_256x240.png
+- vendor/assets/images/blitzer/ui-bg_diagonals-thick_75_f3d8d8_40x40.png
+- vendor/assets/images/blitzer/ui-bg_dots-small_65_a6a6a6_2x2.png
+- vendor/assets/images/blitzer/ui-bg_flat_0_333333_40x100.png
+- vendor/assets/images/blitzer/ui-bg_flat_65_ffffff_40x100.png
+- vendor/assets/images/blitzer/ui-bg_flat_75_ffffff_40x100.png
+- vendor/assets/images/blitzer/ui-bg_glass_55_fbf8ee_1x400.png
+- vendor/assets/images/blitzer/ui-bg_highlight-hard_100_eeeeee_1x100.png
+- vendor/assets/images/blitzer/ui-bg_highlight-hard_100_f6f6f6_1x100.png
+- vendor/assets/images/blitzer/ui-bg_highlight-soft_15_cc0000_1x100.png
+- vendor/assets/images/blitzer/ui-icons_004276_256x240.png
+- vendor/assets/images/blitzer/ui-icons_cc0000_256x240.png
+- vendor/assets/images/blitzer/ui-icons_ffffff_256x240.png
+- vendor/assets/images/cupertino/ui-bg_diagonals-thick_90_eeeeee_40x40.png
+- vendor/assets/images/cupertino/ui-bg_flat_15_cd0a0a_40x100.png
+- vendor/assets/images/cupertino/ui-bg_glass_100_e4f1fb_1x400.png
+- vendor/assets/images/cupertino/ui-bg_glass_50_3baae3_1x400.png
+- vendor/assets/images/cupertino/ui-bg_glass_80_d7ebf9_1x400.png
+- vendor/assets/images/cupertino/ui-bg_highlight-hard_100_f2f5f7_1x100.png
+- vendor/assets/images/cupertino/ui-bg_highlight-hard_70_000000_1x100.png
+- vendor/assets/images/cupertino/ui-bg_highlight-soft_100_deedf7_1x100.png
+- vendor/assets/images/cupertino/ui-bg_highlight-soft_25_ffef8f_1x100.png
+- vendor/assets/images/cupertino/ui-icons_2694e8_256x240.png
+- vendor/assets/images/cupertino/ui-icons_2e83ff_256x240.png
+- vendor/assets/images/cupertino/ui-icons_3d80b3_256x240.png
+- vendor/assets/images/cupertino/ui-icons_72a7cf_256x240.png
+- vendor/assets/images/cupertino/ui-icons_ffffff_256x240.png
+- vendor/assets/images/dark-hive/ui-bg_flat_30_cccccc_40x100.png
+- vendor/assets/images/dark-hive/ui-bg_flat_50_5c5c5c_40x100.png
+- vendor/assets/images/dark-hive/ui-bg_glass_40_ffc73d_1x400.png
+- vendor/assets/images/dark-hive/ui-bg_highlight-hard_20_0972a5_1x100.png
+- vendor/assets/images/dark-hive/ui-bg_highlight-soft_33_003147_1x100.png
+- vendor/assets/images/dark-hive/ui-bg_highlight-soft_35_222222_1x100.png
+- vendor/assets/images/dark-hive/ui-bg_highlight-soft_44_444444_1x100.png
+- vendor/assets/images/dark-hive/ui-bg_highlight-soft_80_eeeeee_1x100.png
+- vendor/assets/images/dark-hive/ui-bg_loop_25_000000_21x21.png
+- vendor/assets/images/dark-hive/ui-icons_222222_256x240.png
+- vendor/assets/images/dark-hive/ui-icons_4b8e0b_256x240.png
+- vendor/assets/images/dark-hive/ui-icons_a83300_256x240.png
+- vendor/assets/images/dark-hive/ui-icons_cccccc_256x240.png
+- vendor/assets/images/dark-hive/ui-icons_ffffff_256x240.png
+- vendor/assets/images/eggplant/ui-bg_flat_0_aaaaaa_40x100.png
+- vendor/assets/images/eggplant/ui-bg_flat_0_eeeeee_40x100.png
+- vendor/assets/images/eggplant/ui-bg_flat_55_994d53_40x100.png
+- vendor/assets/images/eggplant/ui-bg_flat_55_fafafa_40x100.png
+- vendor/assets/images/eggplant/ui-bg_gloss-wave_30_3d3644_500x100.png
+- vendor/assets/images/eggplant/ui-bg_highlight-soft_100_dcd9de_1x100.png
+- vendor/assets/images/eggplant/ui-bg_highlight-soft_100_eae6ea_1x100.png
+- vendor/assets/images/eggplant/ui-bg_highlight-soft_25_30273a_1x100.png
+- vendor/assets/images/eggplant/ui-bg_highlight-soft_45_5f5964_1x100.png
+- vendor/assets/images/eggplant/ui-icons_454545_256x240.png
+- vendor/assets/images/eggplant/ui-icons_734d99_256x240.png
+- vendor/assets/images/eggplant/ui-icons_8d78a5_256x240.png
+- vendor/assets/images/eggplant/ui-icons_a8a3ae_256x240.png
+- vendor/assets/images/eggplant/ui-icons_ebccce_256x240.png
+- vendor/assets/images/eggplant/ui-icons_ffffff_256x240.png
+- vendor/assets/images/excite-bike/ui-bg_diagonals-small_25_c5ddfc_40x40.png
+- vendor/assets/images/excite-bike/ui-bg_diagonals-thick_20_e69700_40x40.png
+- vendor/assets/images/excite-bike/ui-bg_diagonals-thick_22_1484e6_40x40.png
+- vendor/assets/images/excite-bike/ui-bg_diagonals-thick_26_2293f7_40x40.png
+- vendor/assets/images/excite-bike/ui-bg_flat_0_e69700_40x100.png
+- vendor/assets/images/excite-bike/ui-bg_flat_0_e6b900_40x100.png
+- vendor/assets/images/excite-bike/ui-bg_highlight-soft_100_f9f9f9_1x100.png
+- vendor/assets/images/excite-bike/ui-bg_inset-hard_100_eeeeee_1x100.png
+- vendor/assets/images/excite-bike/ui-icons_0a82eb_256x240.png
+- vendor/assets/images/excite-bike/ui-icons_0b54d5_256x240.png
+- vendor/assets/images/excite-bike/ui-icons_5fa5e3_256x240.png
+- vendor/assets/images/excite-bike/ui-icons_fcdd4a_256x240.png
+- vendor/assets/images/excite-bike/ui-icons_ffffff_256x240.png
+- vendor/assets/images/flick/ui-bg_flat_0_aaaaaa_40x100.png
+- vendor/assets/images/flick/ui-bg_flat_0_eeeeee_40x100.png
+- vendor/assets/images/flick/ui-bg_flat_55_ffffff_40x100.png
+- vendor/assets/images/flick/ui-bg_flat_75_ffffff_40x100.png
+- vendor/assets/images/flick/ui-bg_glass_65_ffffff_1x400.png
+- vendor/assets/images/flick/ui-bg_highlight-soft_100_f6f6f6_1x100.png
+- vendor/assets/images/flick/ui-bg_highlight-soft_25_0073ea_1x100.png
+- vendor/assets/images/flick/ui-bg_highlight-soft_50_dddddd_1x100.png
+- vendor/assets/images/flick/ui-icons_0073ea_256x240.png
+- vendor/assets/images/flick/ui-icons_454545_256x240.png
+- vendor/assets/images/flick/ui-icons_666666_256x240.png
+- vendor/assets/images/flick/ui-icons_ff0084_256x240.png
+- vendor/assets/images/flick/ui-icons_ffffff_256x240.png
+- vendor/assets/images/hot-sneaks/ui-bg_diagonals-small_40_db4865_40x40.png
+- vendor/assets/images/hot-sneaks/ui-bg_diagonals-small_50_93c3cd_40x40.png
+- vendor/assets/images/hot-sneaks/ui-bg_diagonals-small_50_ff3853_40x40.png
+- vendor/assets/images/hot-sneaks/ui-bg_diagonals-small_75_ccd232_40x40.png
+- vendor/assets/images/hot-sneaks/ui-bg_dots-medium_80_ffff38_4x4.png
+- vendor/assets/images/hot-sneaks/ui-bg_dots-small_35_35414f_2x2.png
+- vendor/assets/images/hot-sneaks/ui-bg_flat_75_ba9217_40x100.png
+- vendor/assets/images/hot-sneaks/ui-bg_flat_75_ffffff_40x100.png
+- vendor/assets/images/hot-sneaks/ui-bg_white-lines_85_f7f7ba_40x100.png
+- vendor/assets/images/hot-sneaks/ui-icons_454545_256x240.png
+- vendor/assets/images/hot-sneaks/ui-icons_88a206_256x240.png
+- vendor/assets/images/hot-sneaks/ui-icons_c02669_256x240.png
+- vendor/assets/images/hot-sneaks/ui-icons_e1e463_256x240.png
+- vendor/assets/images/hot-sneaks/ui-icons_ffeb33_256x240.png
+- vendor/assets/images/hot-sneaks/ui-icons_ffffff_256x240.png
+- vendor/assets/images/humanity/ui-bg_flat_75_aaaaaa_40x100.png
+- vendor/assets/images/humanity/ui-bg_glass_100_f5f0e5_1x400.png
+- vendor/assets/images/humanity/ui-bg_glass_25_cb842e_1x400.png
+- vendor/assets/images/humanity/ui-bg_glass_70_ede4d4_1x400.png
+- vendor/assets/images/humanity/ui-bg_highlight-hard_100_f4f0ec_1x100.png
+- vendor/assets/images/humanity/ui-bg_highlight-hard_65_fee4bd_1x100.png
+- vendor/assets/images/humanity/ui-bg_highlight-hard_75_f5f5b5_1x100.png
+- vendor/assets/images/humanity/ui-bg_inset-soft_100_f4f0ec_1x100.png
+- vendor/assets/images/humanity/ui-icons_c47a23_256x240.png
+- vendor/assets/images/humanity/ui-icons_cb672b_256x240.png
+- vendor/assets/images/humanity/ui-icons_f08000_256x240.png
+- vendor/assets/images/humanity/ui-icons_f35f07_256x240.png
+- vendor/assets/images/humanity/ui-icons_ff7519_256x240.png
+- vendor/assets/images/humanity/ui-icons_ffffff_256x240.png
+- vendor/assets/images/le-frog/ui-bg_diagonals-small_0_aaaaaa_40x40.png
+- vendor/assets/images/le-frog/ui-bg_diagonals-thick_15_444444_40x40.png
+- vendor/assets/images/le-frog/ui-bg_diagonals-thick_95_ffdc2e_40x40.png
+- vendor/assets/images/le-frog/ui-bg_glass_55_fbf5d0_1x400.png
+- vendor/assets/images/le-frog/ui-bg_highlight-hard_30_285c00_1x100.png
+- vendor/assets/images/le-frog/ui-bg_highlight-soft_33_3a8104_1x100.png
+- vendor/assets/images/le-frog/ui-bg_highlight-soft_50_4eb305_1x100.png
+- vendor/assets/images/le-frog/ui-bg_highlight-soft_60_4ca20b_1x100.png
+- vendor/assets/images/le-frog/ui-bg_inset-soft_10_285c00_1x100.png
+- vendor/assets/images/le-frog/ui-icons_4eb305_256x240.png
+- vendor/assets/images/le-frog/ui-icons_72b42d_256x240.png
+- vendor/assets/images/le-frog/ui-icons_cd0a0a_256x240.png
+- vendor/assets/images/le-frog/ui-icons_ffffff_256x240.png
+- vendor/assets/images/overcast/ui-bg_flat_0_aaaaaa_40x100.png
+- vendor/assets/images/overcast/ui-bg_flat_0_eeeeee_40x100.png
+- vendor/assets/images/overcast/ui-bg_flat_55_c0402a_40x100.png
+- vendor/assets/images/overcast/ui-bg_flat_55_eeeeee_40x100.png
+- vendor/assets/images/overcast/ui-bg_glass_100_f8f8f8_1x400.png
+- vendor/assets/images/overcast/ui-bg_glass_35_dddddd_1x400.png
+- vendor/assets/images/overcast/ui-bg_glass_60_eeeeee_1x400.png
+- vendor/assets/images/overcast/ui-bg_inset-hard_75_999999_1x100.png
+- vendor/assets/images/overcast/ui-bg_inset-soft_50_c9c9c9_1x100.png
+- vendor/assets/images/overcast/ui-icons_3383bb_256x240.png
+- vendor/assets/images/overcast/ui-icons_454545_256x240.png
+- vendor/assets/images/overcast/ui-icons_70b2e1_256x240.png
+- vendor/assets/images/overcast/ui-icons_999999_256x240.png
+- vendor/assets/images/overcast/ui-icons_fbc856_256x240.png
+- vendor/assets/images/pepper-grinder/ui-bg_diagonal-maze_20_6e4f1c_10x10.png
+- vendor/assets/images/pepper-grinder/ui-bg_diagonal-maze_40_000000_10x10.png
+- vendor/assets/images/pepper-grinder/ui-bg_fine-grain_10_eceadf_60x60.png
+- vendor/assets/images/pepper-grinder/ui-bg_fine-grain_10_f8f7f6_60x60.png
+- vendor/assets/images/pepper-grinder/ui-bg_fine-grain_15_eceadf_60x60.png
+- vendor/assets/images/pepper-grinder/ui-bg_fine-grain_15_f7f3de_60x60.png
+- vendor/assets/images/pepper-grinder/ui-bg_fine-grain_15_ffffff_60x60.png
+- vendor/assets/images/pepper-grinder/ui-bg_fine-grain_65_654b24_60x60.png
+- vendor/assets/images/pepper-grinder/ui-bg_fine-grain_68_b83400_60x60.png
+- vendor/assets/images/pepper-grinder/ui-icons_222222_256x240.png
+- vendor/assets/images/pepper-grinder/ui-icons_3572ac_256x240.png
+- vendor/assets/images/pepper-grinder/ui-icons_8c291d_256x240.png
+- vendor/assets/images/pepper-grinder/ui-icons_b83400_256x240.png
+- vendor/assets/images/pepper-grinder/ui-icons_fbdb93_256x240.png
+- vendor/assets/images/pepper-grinder/ui-icons_ffffff_256x240.png
+- vendor/assets/images/redmond/ui-bg_flat_0_aaaaaa_40x100.png
+- vendor/assets/images/redmond/ui-bg_flat_55_fbec88_40x100.png
+- vendor/assets/images/redmond/ui-bg_glass_75_d0e5f5_1x400.png
+- vendor/assets/images/redmond/ui-bg_glass_85_dfeffc_1x400.png
+- vendor/assets/images/redmond/ui-bg_glass_95_fef1ec_1x400.png
+- vendor/assets/images/redmond/ui-bg_gloss-wave_55_5c9ccc_500x100.png
+- vendor/assets/images/redmond/ui-bg_inset-hard_100_f5f8f9_1x100.png
+- vendor/assets/images/redmond/ui-bg_inset-hard_100_fcfdfd_1x100.png
+- vendor/assets/images/redmond/ui-icons_217bc0_256x240.png
+- vendor/assets/images/redmond/ui-icons_2e83ff_256x240.png
+- vendor/assets/images/redmond/ui-icons_469bdd_256x240.png
+- vendor/assets/images/redmond/ui-icons_6da8d5_256x240.png
+- vendor/assets/images/redmond/ui-icons_cd0a0a_256x240.png
+- vendor/assets/images/redmond/ui-icons_d8e7f3_256x240.png
+- vendor/assets/images/redmond/ui-icons_f9bd01_256x240.png
+- vendor/assets/images/smoothness/ui-bg_flat_0_aaaaaa_40x100.png
+- vendor/assets/images/smoothness/ui-bg_flat_75_ffffff_40x100.png
+- vendor/assets/images/smoothness/ui-bg_glass_55_fbf9ee_1x400.png
+- vendor/assets/images/smoothness/ui-bg_glass_65_ffffff_1x400.png
+- vendor/assets/images/smoothness/ui-bg_glass_75_dadada_1x400.png
+- vendor/assets/images/smoothness/ui-bg_glass_75_e6e6e6_1x400.png
+- vendor/assets/images/smoothness/ui-bg_glass_95_fef1ec_1x400.png
+- vendor/assets/images/smoothness/ui-bg_highlight-soft_75_cccccc_1x100.png
+- vendor/assets/images/smoothness/ui-icons_222222_256x240.png
+- vendor/assets/images/smoothness/ui-icons_2e83ff_256x240.png
+- vendor/assets/images/smoothness/ui-icons_454545_256x240.png
+- vendor/assets/images/smoothness/ui-icons_888888_256x240.png
+- vendor/assets/images/smoothness/ui-icons_cd0a0a_256x240.png
+- vendor/assets/images/south-street/ui-bg_glass_55_fcf0ba_1x400.png
+- vendor/assets/images/south-street/ui-bg_gloss-wave_100_ece8da_500x100.png
+- vendor/assets/images/south-street/ui-bg_highlight-hard_100_f5f3e5_1x100.png
+- vendor/assets/images/south-street/ui-bg_highlight-hard_100_fafaf4_1x100.png
+- vendor/assets/images/south-street/ui-bg_highlight-hard_15_459e00_1x100.png
+- vendor/assets/images/south-street/ui-bg_highlight-hard_95_cccccc_1x100.png
+- vendor/assets/images/south-street/ui-bg_highlight-soft_25_67b021_1x100.png
+- vendor/assets/images/south-street/ui-bg_highlight-soft_95_ffedad_1x100.png
+- vendor/assets/images/south-street/ui-bg_inset-soft_15_2b2922_1x100.png
+- vendor/assets/images/south-street/ui-icons_808080_256x240.png
+- vendor/assets/images/south-street/ui-icons_847e71_256x240.png
+- vendor/assets/images/south-street/ui-icons_8dc262_256x240.png
+- vendor/assets/images/south-street/ui-icons_cd0a0a_256x240.png
+- vendor/assets/images/south-street/ui-icons_eeeeee_256x240.png
+- vendor/assets/images/south-street/ui-icons_ffffff_256x240.png
+- vendor/assets/images/start/ui-bg_flat_55_999999_40x100.png
+- vendor/assets/images/start/ui-bg_flat_75_aaaaaa_40x100.png
+- vendor/assets/images/start/ui-bg_glass_45_0078ae_1x400.png
+- vendor/assets/images/start/ui-bg_glass_55_f8da4e_1x400.png
+- vendor/assets/images/start/ui-bg_glass_75_79c9ec_1x400.png
+- vendor/assets/images/start/ui-bg_gloss-wave_45_e14f1c_500x100.png
+- vendor/assets/images/start/ui-bg_gloss-wave_50_6eac2c_500x100.png
+- vendor/assets/images/start/ui-bg_gloss-wave_75_2191c0_500x100.png
+- vendor/assets/images/start/ui-bg_inset-hard_100_fcfdfd_1x100.png
+- vendor/assets/images/start/ui-icons_0078ae_256x240.png
+- vendor/assets/images/start/ui-icons_056b93_256x240.png
+- vendor/assets/images/start/ui-icons_d8e7f3_256x240.png
+- vendor/assets/images/start/ui-icons_e0fdff_256x240.png
+- vendor/assets/images/start/ui-icons_f5e175_256x240.png
+- vendor/assets/images/start/ui-icons_f7a50d_256x240.png
+- vendor/assets/images/start/ui-icons_fcd113_256x240.png
+- vendor/assets/images/sunny/ui-bg_diagonals-medium_20_d34d17_40x40.png
+- vendor/assets/images/sunny/ui-bg_flat_30_cccccc_40x100.png
+- vendor/assets/images/sunny/ui-bg_flat_50_5c5c5c_40x100.png
+- vendor/assets/images/sunny/ui-bg_gloss-wave_45_817865_500x100.png
+- vendor/assets/images/sunny/ui-bg_gloss-wave_60_fece2f_500x100.png
+- vendor/assets/images/sunny/ui-bg_gloss-wave_70_ffdd57_500x100.png
+- vendor/assets/images/sunny/ui-bg_gloss-wave_90_fff9e5_500x100.png
+- vendor/assets/images/sunny/ui-bg_highlight-soft_100_feeebd_1x100.png
+- vendor/assets/images/sunny/ui-bg_inset-soft_30_ffffff_1x100.png
+- vendor/assets/images/sunny/ui-icons_3d3d3d_256x240.png
+- vendor/assets/images/sunny/ui-icons_bd7b00_256x240.png
+- vendor/assets/images/sunny/ui-icons_d19405_256x240.png
+- vendor/assets/images/sunny/ui-icons_eb990f_256x240.png
+- vendor/assets/images/sunny/ui-icons_ed9f26_256x240.png
+- vendor/assets/images/sunny/ui-icons_fadc7a_256x240.png
+- vendor/assets/images/sunny/ui-icons_ffe180_256x240.png
+- vendor/assets/images/ui-darkness/ui-bg_flat_30_cccccc_40x100.png
+- vendor/assets/images/ui-darkness/ui-bg_flat_50_5c5c5c_40x100.png
+- vendor/assets/images/ui-darkness/ui-bg_glass_20_555555_1x400.png
+- vendor/assets/images/ui-darkness/ui-bg_glass_40_0078a3_1x400.png
+- vendor/assets/images/ui-darkness/ui-bg_glass_40_ffc73d_1x400.png
+- vendor/assets/images/ui-darkness/ui-bg_gloss-wave_25_333333_500x100.png
+- vendor/assets/images/ui-darkness/ui-bg_highlight-soft_80_eeeeee_1x100.png
+- vendor/assets/images/ui-darkness/ui-bg_inset-soft_25_000000_1x100.png
+- vendor/assets/images/ui-darkness/ui-bg_inset-soft_30_f58400_1x100.png
+- vendor/assets/images/ui-darkness/ui-icons_222222_256x240.png
+- vendor/assets/images/ui-darkness/ui-icons_4b8e0b_256x240.png
+- vendor/assets/images/ui-darkness/ui-icons_a83300_256x240.png
+- vendor/assets/images/ui-darkness/ui-icons_cccccc_256x240.png
+- vendor/assets/images/ui-darkness/ui-icons_ffffff_256x240.png
+- vendor/assets/javascripts/jquery-ui-1.8.16.custom.min.js
+- vendor/assets/javascripts/jqueryui.js
+- vendor/assets/stylesheets/black-tie.css
+- vendor/assets/stylesheets/blitzer.css
+- vendor/assets/stylesheets/cupertino.css
+- vendor/assets/stylesheets/dark-hive.css
+- vendor/assets/stylesheets/eggplant.css
+- vendor/assets/stylesheets/excite-bike.css
+- vendor/assets/stylesheets/flick.css
+- vendor/assets/stylesheets/hot-sneaks.css
+- vendor/assets/stylesheets/humanity.css
+- vendor/assets/stylesheets/jqueryui.css
+- vendor/assets/stylesheets/le-frog.css
+- vendor/assets/stylesheets/overcast.css
+- vendor/assets/stylesheets/pepper-grinder.css
+- vendor/assets/stylesheets/redmond.css
+- vendor/assets/stylesheets/results.css
+- vendor/assets/stylesheets/smoothness.css
+- vendor/assets/stylesheets/south-street.css
+- vendor/assets/stylesheets/start.css
+- vendor/assets/stylesheets/sunny.css
+- vendor/assets/stylesheets/ui-darkness.css
+homepage: https://github.com/allen13/rails-asset-jqueryui
+licenses: []
+post_install_message: 
+rdoc_options: []
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  none: false
+  requirements:
+  - - ! '>='
+    - !ruby/object:Gem::Version
+      version: '0'
+      segments:
+      - 0
+      hash: -1786975641860615581
+required_rubygems_version: !ruby/object:Gem::Requirement
+  none: false
+  requirements:
+  - - ! '>='
+    - !ruby/object:Gem::Version
+      version: '0'
+      segments:
+      - 0
+      hash: -1786975641860615581
+requirements: []
+rubyforge_project: rails-asset-jqueryui
+rubygems_version: 1.8.10
+signing_key: 
+specification_version: 3
+summary: A gemified version of the jquery-ui javascript library.
+test_files:
+- spec/dummy/.gitignore
+- spec/dummy/.rspec
+- spec/dummy/Guardfile
+- spec/dummy/README
+- spec/dummy/Rakefile
+- spec/dummy/app/assets/images/rails.png
+- spec/dummy/app/assets/javascripts/application.js
+- spec/dummy/app/assets/javascripts/datepicker.js
+- spec/dummy/app/assets/javascripts/home.js.coffee
+- spec/dummy/app/assets/stylesheets/application.css
+- spec/dummy/app/assets/stylesheets/home.css.scss
+- spec/dummy/app/controllers/application_controller.rb
+- spec/dummy/app/controllers/home_controller.rb
+- spec/dummy/app/helpers/application_helper.rb
+- spec/dummy/app/helpers/home_helper.rb
+- spec/dummy/app/mailers/.gitkeep
+- spec/dummy/app/models/.gitkeep
+- spec/dummy/app/views/home/index.html.haml
+- spec/dummy/app/views/layouts/application.html.erb
+- spec/dummy/config.ru
+- spec/dummy/config/application.rb
+- spec/dummy/config/boot.rb
+- spec/dummy/config/cucumber.yml
+- spec/dummy/config/database.yml
+- spec/dummy/config/environment.rb
+- spec/dummy/config/environments/development.rb
+- spec/dummy/config/environments/production.rb
+- spec/dummy/config/environments/test.rb
+- spec/dummy/config/initializers/backtrace_silencers.rb
+- spec/dummy/config/initializers/generators.rb
+- spec/dummy/config/initializers/inflections.rb
+- spec/dummy/config/initializers/mime_types.rb
+- spec/dummy/config/initializers/secret_token.rb
+- spec/dummy/config/initializers/session_store.rb
+- spec/dummy/config/initializers/wrap_parameters.rb
+- spec/dummy/config/locales/en.yml
+- spec/dummy/config/routes.rb
+- spec/dummy/db/schema.rb
+- spec/dummy/db/seeds.rb
+- spec/dummy/doc/README_FOR_APP
+- spec/dummy/features/support/env.rb
+- spec/dummy/lib/assets/.gitkeep
+- spec/dummy/lib/tasks/.gitkeep
+- spec/dummy/lib/tasks/cucumber.rake
+- spec/dummy/log/.gitkeep
+- spec/dummy/public/404.html
+- spec/dummy/public/422.html
+- spec/dummy/public/500.html
+- spec/dummy/public/favicon.ico
+- spec/dummy/public/robots.txt
+- spec/dummy/script/cucumber
+- spec/dummy/script/rails
+- spec/dummy/spec/controllers/home_controller_spec.rb
+- spec/dummy/spec/helpers/home_helper_spec.rb
+- spec/dummy/spec/spec_helper.rb
+- spec/dummy/spec/views/home/index.html.haml_spec.rb
+- spec/dummy/vendor/assets/stylesheets/.gitkeep
+- spec/dummy/vendor/plugins/.gitkeep
+- spec/jqueryui_spec.rb
+- spec/spec_helper.rb
