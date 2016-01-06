@@ -1,0 +1,5 @@
+ruby-rails-asset-jqueryui (0.0.3-1) UNRELEASED; urgency=medium
+
+  * Initial release (Closes: #798291)
+
+ -- Sagar Ippalpalli <debian@debian.debian>  Wed, 06 Jan 2016 21:54:15 +0530
