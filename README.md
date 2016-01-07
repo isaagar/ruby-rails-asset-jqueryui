@@ -1,4 +1,4 @@
-# rails-asset-jqgrid
+# rails-asset-jqueryui
 
 Gemified/Assetized version of the jqueryui library complete with themes!
 
