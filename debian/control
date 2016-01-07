@@ -2,25 +2,33 @@ Source: ruby-rails-asset-jqueryui
 Section: ruby
 Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
-Uploaders: Sagar Ippalpalli <>
-Build-Depends: debhelper (>= 9~),
-               gem2deb,
-               rake,
-               ruby-jquery-rails,
-               ruby-rspec
+Uploaders: Sagar Ippalpalli <i.vikram15@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), 
+	       gem2deb, 
+	       ruby-rspec,
+	       rake
 Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-rails-asset-jqueryui.git
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-rails-asset-jqueryui.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-rails-asset-jqueryui.git;a=summary
 Homepage: https://github.com/allen13/rails-asset-jqueryui
-Testsuite: autopkgtest-pkg-ruby
+Testsuite: autopkgtest
 XS-Ruby-Versions: all
 
 Package: ruby-rails-asset-jqueryui
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ruby | ruby-interpreter,
-         ruby-jquery-rails,
-         ${misc:Depends},
-         ${shlibs:Depends}
-Description: A gemified version of the jquery-ui javascript library.
+Depends: ${shlibs:Depends}, 
+	 ${misc:Depends},
+	 ruby | ruby-interpreter
+# rspec (>= 0, development), rails (>= 3.1.0, development), jquery-rails (>= 0)
+Description: Gemified version of the jquery-ui javascript library.
  A gemified version of the jquery-ui javascript library.
+ 
+Package: libjs-jqueryui.js
+Section: web
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Provides interactions, widgets, effects, and theming for 
+ creating Rich Internet Applications.
+
