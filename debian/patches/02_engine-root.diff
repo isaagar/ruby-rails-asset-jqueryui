@@ -1,0 +1,16 @@
+Description: Adding module jqueryui to engine.rb
+Author: Sagar Ippalpalli <i.vikram15@gmail.com>
+Forwarded: no
+Last-Update: 2016-09-16
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/lib/rails-asset-jqueryui/engine.rb
++++ b/lib/rails-asset-jqueryui/engine.rb
+@@ -3,6 +3,7 @@
+     module Jqueryui
+       class Engine < Rails::Engine
+         #should autowire
++        config.root = '/usr/share/ruby-rails-asset-jqueryui'
+       end
+     end
+   end
