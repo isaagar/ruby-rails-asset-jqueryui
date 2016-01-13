@@ -4,14 +4,14 @@ Source: https://github.com/allen13/rails-asset-jqueryui/archive/master.zip
 
 Files: *
 Copyright: 2015, allen13 <kex.allen13@gmail.com
-License: GPL-2+ 
- 
+License: GPL-2+
+
 Files: debian/*
 Copyright: 2015, Sagar Ippalpalli <i.vikram15@gmail.com>
 License: GPL-2+
 Comment: the Debian packaging is licensed under the same terms as the original package.
 
-License: GPL-2+ 
+License: GPL-2+
  This program is free software; you can redistribute it
  and/or modify it under the terms of the GNU General Public
  License as published by the Free Software Foundation; either

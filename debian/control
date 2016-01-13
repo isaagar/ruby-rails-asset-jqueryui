@@ -3,11 +3,11 @@ Section: ruby
 Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
 Uploaders: Sagar Ippalpalli <i.vikram15@gmail.com>
-Build-Depends: debhelper ( >= 9.0.0 ), 
-	       gem2deb, 
-	       ruby-rspec,
-	       rake,
-	       libjs-jquery-ui
+Build-Depends: debhelper ( >= 9.0.0 ),
+               gem2deb,
+               libjs-jquery-ui,
+               rake,
+               ruby-rspec
 Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-rails-asset-jqueryui.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-rails-asset-jqueryui.git;a=summary
@@ -18,13 +18,11 @@ XS-Ruby-Versions: all
 Package: ruby-rails-asset-jqueryui
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ${shlibs:Depends},
-	 ${misc:Depends},
-	 ruby | ruby-interpreter ,
-	 libjs-jquery-ui 
-# rspec (>= 0, development), rails (>= 3.1.0, development), jquery-rails (>= 0)
+Depends: libjs-jquery-ui,
+         ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
 Description: Gemified version of the jquery-ui javascript library
- This gem includes all of the standard themes 
- from the jquery-ui site.Nothing is stoping 
+ This gem includes all of the standard themes
+ from the jquery-ui site.Nothing is stoping
  you from defining your own locally.
-
